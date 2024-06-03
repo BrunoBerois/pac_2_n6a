@@ -1,0 +1,9 @@
+<div *ngIf="todo; else loading">
+  <h2>Todo Details</h2>
+  <p><strong>ID:</strong> {{ todo.id }}</p>
+  <p><strong>Title:</strong> {{ todo.title }}</p>
+  <p><strong>Completed:</strong> {{ todo.completed ? 'Yes' : 'No' }}</p>
+</div>
+<ng-template #loading>
+  <p>Loading todo details...</p>
+</ng-template>
